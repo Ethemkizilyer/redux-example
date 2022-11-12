@@ -8,7 +8,7 @@ import {store} from "./redux/index"
 
 
 function App() {
-
+//  localStorage.setItem("test", JSON.stringify(store)); 
   return (
     <>
       <Provider store={store}>

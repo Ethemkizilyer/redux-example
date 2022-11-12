@@ -1,8 +1,11 @@
 import { ADD, CLEAR, REMOVE } from "../type/basketType";
 
-const initialState = [];
-
+let initialState =[];
+// let initialState = initialState ? localStorage.getItem("test") : [];
+ 
 const reducer = (state = initialState, action) => {
+  
+  
   switch (action.type) {
     case ADD:
       return [
@@ -17,6 +20,7 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
+ 
 };
 // rxreducer
 
